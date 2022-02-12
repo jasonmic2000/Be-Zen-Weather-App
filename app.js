@@ -17,9 +17,9 @@ form.addEventListener("submit", e => {
     .then(response => response.json())
     .then(data => {
       const { main, name, sys, weather } = data
-      const icon = `https://openweathermap.org/img/wn/${
+      const icon = `./icons/${
         weather[0]["icon"]
-      }@2x.png`
+      }.png`
 
       const li = document.createElement("li")
       li.classList.add("city")
